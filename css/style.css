@@ -2,13 +2,30 @@
     padding: 0;
     margin: 0;
 }
-.header{
+/* Background */
+.home_background{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)), url(../images/school.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)), url('../images/school.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
+}
+.resources_background{
+    min-height: 100vh;
+    padding: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/graduation.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+.blog_background{
+    min-height: 100vh;
+    padding: 40px;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/student.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 nav{
     display: flex;
