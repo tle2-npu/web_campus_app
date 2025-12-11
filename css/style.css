@@ -1,55 +1,54 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 /* Background */
 .home_background{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)), url('../images/school.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../images/school.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.resources_background{
+.news_background{
     min-height: 100vh;
     padding: 40px;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/graduation.jpeg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/graduation.jpeg');
     background-size: cover;
     background-position: center;
     color: #fff;
 }
-.blog_background{
+.about_background{
     min-height: 100vh;
     padding: 40px;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../images/student.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('../images/student.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
 }
+/* Navigation */
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
 }
-.nav_links{
-    flex: 1;
-    text-align: center; 
-}
 .nav_links ul{
     white-space: nowrap;   /* avoid wrapping */
+    list-style: none;
+    text-align: center;
 }
 .nav_links ul li{
-    list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    margin: 0 8px;
 }
 .nav_links ul li a{
     color: #fff;
     text-decoration: none;
-    font-size:24px;
-    padding: 14px 32px;
+    font-size:22px;
+    padding: 12px 28px;
     font-weight: 600;
     border: 3px solid #fff;
     border-radius: 25px;
@@ -58,4 +57,24 @@ nav{
 .nav_links ul li a:hover {
     background-color: #fff;
     color: #000;
+}
+/* Input & Results */
+#newsKeyword {
+  flex: 1;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  nav img {
+    width: 20%;
+  }
+  .nav_links ul li a {
+    font-size: 16px;
+    padding: 8px 16px;
+    border-width: 2px;
+  }
+  .home_background,
+  .news_background,
+  .about_background {
+    padding: 20px;
+  }
 }
